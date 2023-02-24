@@ -24,7 +24,7 @@
 }
 .conteyner{
     margin: 0 auto;
-    width: 1152px;
+    width: 1158px;
     padding: 0 12px;
     outline: 2px solid tomato;
     
@@ -233,6 +233,15 @@ padding-bottom: 120px;
 
 .section-btn-fifth{
     min-width: 126px;
+}
+
+.section-filter{
+    margin-top: 96px;
+}
+
+.section-result{
+    margin-top: 72px;
+    margin-bottom: 120px;
 }
 
 .item{
