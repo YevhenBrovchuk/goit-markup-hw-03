@@ -88,6 +88,13 @@ p{
 
 }
 /* Site nav */
+.site-nav, .auth-nav{
+    display: flex;
+}
+.list-item{
+    margin-left: 40px;
+    outline: 1px solid tomato;
+}
 .site-nav .link{
     color:var(--logo-nav-footer-color);
     font-weight: 500;
@@ -101,6 +108,7 @@ p{
 }
 
 /* Auth nav */
+
 .auth-nav .link{
     color:var(--main-text-color);
     /* font-weight: 400;
