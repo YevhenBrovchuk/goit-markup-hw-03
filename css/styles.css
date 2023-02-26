@@ -24,9 +24,10 @@
 }
 .conteyner{
     margin: 0 auto;
-    width: 1158px;
+    width: 1152px;
     padding: 0 12px;
-    outline: 2px solid tomato;
+    /* outline: 1px solid tomato; */
+    
     
 }
 
@@ -44,6 +45,7 @@ body {
     padding: 0;
 } */
 .list{
+    display: flex;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -64,6 +66,10 @@ border: 1px solid transparent;
 
 .link{
 text-decoration: none;
+}
+.navigation{
+    display: flex;
+    align-items: center;
 }
 p{
     margin-top: 0;
@@ -88,14 +94,18 @@ p{
 
 }
 /* Site nav */
-.site-nav, .auth-nav{
+.site-nav{
     display: flex;
+    margin-left: 76px;
 }
-.list-item{
-    margin-left: 40px;
-    outline: 1px solid tomato;
+.list-item:not(:last-child){
+    margin-right: 40px;
 }
 .site-nav .link{
+ display: block;
+ padding-top: 24px;
+ padding-bottom: 24px;
+
     color:var(--logo-nav-footer-color);
     font-weight: 500;
     font-size: 16px;
@@ -109,7 +119,21 @@ p{
 
 /* Auth nav */
 
+.address{
+    margin-left: auto;
+}
+.auth-nav {
+    display: flex;
+    
+}
+
 .auth-nav .link{
+ display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+
+
     color:var(--main-text-color);
     /* font-weight: 400;
     font-size: 16px; */
@@ -197,6 +221,11 @@ margin-bottom: 72px;
     line-height: 1.11;
     text-align: center;  
 }
+.list-prior .item:not(:last-child),
+.list-fotowork .item:not(:last-child),
+.list-team .item:not(:last-child){
+    margin-right: 24px;
+}
 .team-section {
 padding-top: 120px;
 padding-bottom: 120px;
@@ -252,7 +281,7 @@ padding-bottom: 120px;
     margin-bottom: 120px;
 }
 
-.item{
+.list-team .item{
     background-color: var(--body-color);
 }
 
