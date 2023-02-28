@@ -22,9 +22,9 @@
 --hero-fon-color:#2E2F42;
 
 }
-.conteyner{
+.conteiner{
     margin: 0 auto;
-    width: 1158px;
+    max-width: 1158px;
     padding: 0 15px;
     /* background-color: #b6b7b9; */
     
@@ -54,6 +54,7 @@ body {
     margin: 0;
     list-style: none;
     gap: 24px;
+    flex-wrap: wrap;
     /* outline: 1px solid; */
 }
 
@@ -116,7 +117,6 @@ p{
 
 /* Site nav */
 .site-nav{
-    display: flex;
     margin-left: 76px;
 }
 .site-nav .list-item:not(:last-child){
@@ -238,21 +238,23 @@ margin-bottom: 72px;
 }
 
 
-.list-prior {
-    flex-basis: calc((100%-72px)/4);
+/* .list-prior { */
+    /* flex-basis: calc((100% - 72px)/4); */
+    /* flex-wrap: wrap; */
+/* } */
+/* .list-fotowork { */
+    /* flex-basis: calc((100% - 48px)/3); */
+/* } */
+.fotowork-item{
+    flex-basis: calc((100% - 48px)/3);
 }
-.list-fotowork {
-    flex-basis: calc((100%-48px)/3);
-}
-.list-team {
-    flex-basis: calc((100%-72px)/4);
-    justify-content: space-between;
-    text-align: center;
-}
+/* .list-team { */
+    /* flex-basis: calc((100% - 72px)/4); */
+    /* justify-content: space-between; */
+    /* text-align: center; */
+/* } */
 
-/* .text-team{
-    margin-bottom: 32px;
-} */
+
 
 .team-section {
 padding-top: 120px;
@@ -262,6 +264,9 @@ padding-bottom: 120px;
 }
 
 .list-team .item {
+    flex-basis: calc((100% - 72px)/4);
+        justify-content: space-between;
+        text-align: center;
     background-color: var(--body-color);
     padding-bottom: 32px;
 }
@@ -269,6 +274,10 @@ padding-bottom: 120px;
     padding-top:32px;
 }
 
+.prioritet__item{
+    flex-basis: calc((100% - 72px)/4);
+min-width: 250px;
+}
 /* button Portfolio */
 
 .filter{
@@ -311,21 +320,26 @@ padding-bottom: 120px;
 
 .section-filter{
     padding-top: 96px;
+    padding-bottom: 120px
 }
 
-.section-result{
+/* .section-result{
     padding-top: 72px;
     padding-bottom: 120px;
-}
-
+} */
+/* .filter-item{
+    flex-basis: calc((100% - 96px)/5);
+} */
 
 .list-result{
-    flex-wrap: wrap;
+    margin-top: 72px;
     flex-basis: calc((100%-48px)/3);
 }
+
+
+
 .list-result .border{
     padding-top: 32px;
-    padding-right: 54px;
     padding-bottom: 32px;
     padding-left: 16px;
     /* border-right: 1px solid #E7E9FC;
