@@ -90,9 +90,9 @@ p{
     color:var(--main-text-color);
 }
 
-.list-team .subtitle{
+/* .list-team .subtitle{
     padding-top: 32px;
-}
+} */
 /* .teamcard, .workcard{
     margin-bottom: 32px;
 } */
@@ -175,14 +175,12 @@ padding-top: 188px;
  text-align: center;  
 }
 
-.hero-title{
-    margin-top: 0;
-    margin-bottom: 48px;
-
-    color:var(--body-color);
-    font-weight: 700;
+.hero-title{   
+    color:var(--body-color); 
     font-size: 56px;
     line-height: 1.07;
+    max-width: 496px;
+    margin: 0 auto 48px;
 }
 
 
@@ -268,10 +266,14 @@ padding-bottom: 120px;
         justify-content: space-between;
         text-align: center;
     background-color: var(--body-color);
-    padding-bottom: 32px;
 }
-.list-team .subtitle{
+/* .list-team .subtitle{
     padding-top:32px;
+} */
+
+.cont-text-team{
+    padding: 32px 16px ;
+    
 }
 
 .prioritet__item{
@@ -333,9 +335,12 @@ min-width: 250px;
 
 .list-result{
     margin-top: 72px;
-    flex-basis: calc((100%-48px)/3);
+    
 }
 
+.list-result .item{
+flex-basis: calc((100% - 48px)/3);
+}
 
 
 .list-result .border{
